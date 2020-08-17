@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import '../../App.css'
 
 function Header() {
     return (
-        <div className = "container">
-            <div className = "header" style={header}>
+        <div>
+            <div className = "header">
                 <i className="fa fa-check-square fa-fw"/>
                 Todo List
              </div>
@@ -11,16 +12,6 @@ function Header() {
     )
 }
 
-const header ={
-    display :'flex',
-    flexDirection : 'row',
-    height : '12vh',
-    fontSize : '2rem',
-    alignItems : 'center',
-    justifyContent: 'center'
-
-
-}
 
 
 export default Header

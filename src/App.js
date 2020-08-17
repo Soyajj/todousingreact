@@ -3,6 +3,8 @@ import Todos from './components/Todos';
 import { v4 as uuid} from 'uuid';
 import Addtodo from './components/Addtodo';
 import Header from './components/layout/Header';
+import Tasks from './components/Tasks';
+import './App.css';
 
 class App extends Component {
   state = {
@@ -18,7 +20,7 @@ class App extends Component {
   markComplete = (id) =>{
     this.setState({todos : [...this.state.todos.map(todo => {
       if(todo.id === id){
-        todo.completed = !todo.completed
+        todo.completed = !todo.completed;
       }
       return todo
     }
@@ -40,12 +42,16 @@ class App extends Component {
     this.setState({todos : [...this.state.todos, newTodo]})
   }
 
+
   render(){
   return (
     <div className="App">
-      <Header />
-      <Addtodo addTodo = {this.addTodo} />
-      <Todos todos = {this.state.todos} markComplete = {this.markComplete} delTodo = {this.delTodo}/>
+      <div className = "container">
+        <Header />
+        <Addtodo addTodo = {this.addTodo} />
+        <Tasks length = {this.state.todos.length} />
+        <Todos todos = {this.state.todos} markComplete = {this.markComplete} delTodo = {this.delTodo}/>
+      </div>
     </div>
   );
 }}

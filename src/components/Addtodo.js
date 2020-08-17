@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import '../App.css'
 
 export class Addtodo extends Component {
     state = {
@@ -17,44 +18,24 @@ export class Addtodo extends Component {
     }
     render() {
         return (
-            <div className = "container">
-            <form onSubmit = {this.onSubmit} style = {inputsection}> 
-            <i className = "fa fa-pencil fa-2x" />
-                <input type = "text" name = "title" placeholder ="+ Add tasks..." 
-                    onChange = {this.onChange}
-                    value = {this.state.title}
-                    required
-                    autoComplete = "off"
-                    className = "form-control form-control-sm"
-                    style ={inputTask}
-                />
-             
-                <button className = "btn btn-outline-primary btn-sm" type = "submit" style={addbtn}>Add</button>
-            </form>
+            <div className = "addtodo">
+                <form onSubmit = {this.onSubmit} className = "inputsection"> 
+                <i className = "fa fa-pencil fa-2x" />
+                    <input type = "text" name = "title" placeholder ="+ Add tasks..." 
+                        onChange = {this.onChange}
+                        value = {this.state.title}
+                        required
+                        autoComplete = "off"
+                        className = "form-control form-control-sm"
+                    />
+                    <button className = "btn btn-outline-primary btn-sm" type = "submit">Add</button>
+                </form>
             </div>
         )
     }
 }
 
-const inputsection = {
-    display : 'flex',
-    padding : '5px',
-    margin : '5px',
-    flexDirection : 'row',
-    justifyContent : 'space-between'
-}
 
-const addbtn= {
-    margin:'5px',
-
-}
-
-const inputTask ={
-    margin : '5px',
-    border : 'none',
-    borderBottom : '1px solid gray',
-    borderRadius : '0'
-}
 
 export default Addtodo
 
