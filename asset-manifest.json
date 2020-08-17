@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/todousingreact/static/css/main.6a08e227.chunk.css",
+    "main.js": "/todousingreact/static/js/main.ec31075d.chunk.js",
+    "main.js.map": "/todousingreact/static/js/main.ec31075d.chunk.js.map",
+    "runtime-main.js": "/todousingreact/static/js/runtime-main.b732015a.js",
+    "runtime-main.js.map": "/todousingreact/static/js/runtime-main.b732015a.js.map",
+    "static/js/2.804e7d91.chunk.js": "/todousingreact/static/js/2.804e7d91.chunk.js",
+    "static/js/2.804e7d91.chunk.js.map": "/todousingreact/static/js/2.804e7d91.chunk.js.map",
+    "index.html": "/todousingreact/index.html",
+    "precache-manifest.838d85e3414f456be96b138ac6d5bde8.js": "/todousingreact/precache-manifest.838d85e3414f456be96b138ac6d5bde8.js",
+    "service-worker.js": "/todousingreact/service-worker.js",
+    "static/css/main.6a08e227.chunk.css.map": "/todousingreact/static/css/main.6a08e227.chunk.css.map",
+    "static/js/2.804e7d91.chunk.js.LICENSE.txt": "/todousingreact/static/js/2.804e7d91.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b732015a.js",
+    "static/js/2.804e7d91.chunk.js",
+    "static/css/main.6a08e227.chunk.css",
+    "static/js/main.ec31075d.chunk.js"
+  ]
+}
